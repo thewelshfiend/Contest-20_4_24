@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: #FCAF02;
+            font-size: 28px;
+            font-weight: 400;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            padding: 24px 58px;
+            background-color: #FCAF02;
+            color: black;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            margin: 87px 50px 116px 58px;
+            color: white;
+        }
+        h1,
+        h2 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+        button {
+            background-color: #FCAF02;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        input {
+            background-color: black;
+            color: #FCAF02;
+            font-size: 28px;
+            border: 1px solid #FCAF02;
+            border-radius: 100px;
+            outline: none;
+            padding: 24px 58px 24px;
+        }
+        ::placeholder {
+            color: #FCAF02;
+            font-size: 28px;
+        }
+        table {
+            margin: auto;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid #FCAF02;
+            border-collapse: collapse;
+        }
+        th {
+            padding: 30px 0 35px;
+            font-weight: normal;
+            text-align: left;
+        }
+        tfoot td {
+            padding: 24px 0 33px;
+            background-color: #FCAF02;
+            color: black;
+            border-color: black;
+        }
+        td p {
+            padding-top: 50px;
+        }
+
+        .links {
+            position: absolute;
+            right: 78px;
+        }
+        .move {
+            margin-right: 50px;
+        }
+        .block {
+            display: block;
+            width: 85vw;
+        }
+        .line {
+            width: 35vw;
+        }
+        .col1 {
+            padding-left: 50px;
+        }
+        .col2 {
+            padding-left: 67px;
+        }
+        .col3 {
+            padding-left: 56px;
+        }
+        .lastRow {
+            padding-bottom: 61px;
+        }
+
+        #logo {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        #intro {
+            height: 20vh;
+            width: 50vw;
+        }
+        #para {
+            padding-block: 4% 4%;
+            margin-left: 5px;
+        }
+        #login {
+            padding: 14px 114px 13px;
+            margin: 0 0 0px 5px;
+            border: none;
+            border-radius: 500px;
+        }
+        #intro,
+        figure {
+            display: inline-block;
+        }
+        #contact {
+            margin: 0 0 0 63px;
+        }
+        #name {
+            margin-top: 64px;
+        }
+        #email {
+            margin-block: 50px;
+        }
+        #phone {
+            margin-right: 16vh;
+        }
+        #submit {
+            margin: 67px 0 116px 38%;
+            padding: 21px 53px 22px;
+            border: none;
+            border-radius: 100px;
+        }
+        #first_th {
+            padding-inline: 37px 42px;
+        }
+        #second_th {
+            padding-inline: 49px 240px;
+        }
+        #third_th {
+            padding-inline: 52px 617px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span id="logo">Start<u>up</u></span>
+        <span class="links">
+            <a class="move" href="index.html" target="_self">Home</a>
+            <a class="move" href="" target="_self">About Us</a>
+            <a class="move" href="#navlink" target="_self">Contact Us</a>
+            <a href="" target="_self">Login</a>
+        </span>
+    </nav>
+
+    <div id="page">
+        <header>
+            <div id="intro">
+                <h1>Startup Landing Page</h1>
+                <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button id="login" type="submit">Login</button>
+            </div>
+            <figure>
+                <img src="jeff.jpg" title="Jeff Bezos" alt="Image offline" height="482px" width="697px">
+            </figure>
+        </header>
+        <br>
+        <main>
+            <section id="contact">
+                <h2 id="navlink">Contact Us</h2>
+                <div id="inputs">
+                    <form action="" method="post" name="contact">
+                        <input id="name" class="block" type="text" pattern="^[a-zA-Z]+(\s{1}[a-zA-Z]+)*$"
+                            placeholder="Name" required>
+                        <input id="email" class="block" type="email" placeholder="Email" required>
+                        <input id="phone" class="line" type="tel" pattern="^[0-9]{10,11}$" placeholder="Mobile Number" required>
+                        <input id="city" class="line" type="text" placeholder="City" required>
+                        <br>
+                        <button id="submit" type="submit">Submit Form</button>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="first_th">SNO.</th>
+                            <th id="second_th">Startup Name</th>
+                            <th id="third_th">Startup Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col1" rowspan="6">
+                                <p>1.</p>
+                                <p>2.</p>
+                                <p>2.</p>
+                                <p>2.</p>
+                                <p>2.</p>
+                                <p class="lastRow">2.</p>
+                            </td>
+                            <td class="col2" rowspan="6">
+                                <p>WowIndia</p>
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem Ipsum</p>
+                                <p class="lastRow">Lorem Ipsum</p>
+                            </td>
+                            <td class="col3" rowspan="6">
+                                <p>A startup with WOW Ideas.</p>
+                                <p>Lorem Ipsum Text</p>
+                                <p>Lorem Ipsum Text</p>
+                                <p>Lorem Ipsum Text</p>
+                                <p>Lorem Ipsum Text</p>
+                                <p class="lastRow">Lorem Ipsum Text</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="col1">00.</td>
+                            <td class="col2">Final Footer</td>
+                            <td class="col3">Lorem Ipsum Text</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <br>
+            <br>
+            <br>
+        </main>
+    </div>
+</body>
+
+</html>
